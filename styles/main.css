@@ -1,0 +1,431 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-section {
+    background-color: #607EAA;
+    text-align: center;
+}
+
+.header-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 3rem;
+    color: #fff;
+    padding-top: 2rem;
+}
+
+.experience {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 1rem;
+}
+
+.experience-title {
+    font-weight: bold;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.carousel {
+    width: 100%;
+    height: 400px;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-caption h3 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 3rem;
+}
+
+
+
+
+
+
+
+
+
+/*--------- COMBINDED selectors ----------*/
+
+section#contactus h1{
+    margin-top: 10%;
+    text-align: center;
+}
+
+/* ------------ Classes ---------*/
+.contactus{
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+/* .booktrip{
+    margin: 10%;
+}
+
+.booktrip-card{
+    margin: 2%;
+}
+.our-boats {
+    text-align: center;
+    margin: 5%;
+} */
+.row1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.trip-img {
+    margin-right: 3%;
+    width: 20rem; height: auto;
+}
+
+
+.trip{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+
+/* -------------- ID ---------*/
+
+
+
+#trip4life{
+    margin-left: 2%;
+}
+
+#nav-bar-text{
+    margin-right: 2%;
+}
+
+#trip{
+    background-color: #607EAA;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    animation: slideInLeft 0.5s ease-in-out;
+    letter-spacing: 2px;
+    color: #007bff;
+    /* ocean blue color */
+    font-family: 'Cinzel', serif;
+    transition: 0.3s;
+    font-size: 30px;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.navbar-brand:hover {
+    color: white;
+    text-shadow: 2px 2px 3px #007bff;
+}
+
+.navbar .nav-item.active .nav-link {
+    color: #007bff;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #f5f5f5;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.navbar-nav .dropdown-item {
+    color: #333;
+    font-weight: 600;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.profile-link {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.fa-user {
+    margin-right: 5px;
+}
+
+.user-name {
+    font-weight: bold;
+    color: #333
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.section-title p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+.contact-form {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-control {
+    border-radius: 10px;
+    background: #fff;
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+    height: 50px;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: none;
+}
+
+.contact-form .form-control::placeholder {
+    color: #c7c7c7;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .btn {
+    background: #007bff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 15px 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form .btn:hover {
+    background: #0069d9;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* footer */
+footer {
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 2rem 0;
+}
+
+.footer-title {
+    font-size: var(--bs-navbar-brand-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+footer a:hover {
+    color: #712cf9;
+}
+
+.copyright {
+    background-color: rgb(78, 78, 78);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ .booktrip {
+     margin: 10%;
+ }
+
+ .booktrip-card {
+     margin: 30px;
+ }
+
+ .our-boats {
+     text-align: center;
+     margin: 5%;
+ }
+
+ #book-trip {
+     padding: 30px 0;
+ }
+
+ /* Common styles for all cards */
+ .card {
+     border-radius: 1em;
+     width: 300px;
+     height: auto;
+     margin: 20px;
+     background-color: #F9F5EB;
+     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+     transition: all 0.2s ease-in-out;
+ }
+
+ .card:hover {
+     min-height: 360px;
+     border: none;
+     transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px #ddd;
+        cursor: pointer;
+        transform: scale(1.05);
+ }
+
+.card-img-top {
+    width: 100%;
+    min-height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body .card-title {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+        line-height: 1.5;
+            min-height: 3.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.card-body .btn {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-body .btn:hover {
+    background-color: #ccc;
+    color: #fff;
+}
