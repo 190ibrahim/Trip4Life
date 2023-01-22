@@ -122,11 +122,16 @@ if (isset($_POST['book_trip'])) {
             $license = $_POST['license'];
         }
 
-        // Phone number validation
-        if (!isset($_POST['phone']) || $_POST['phone'] == '') {
-            $validation['phone'] = 'phone';
+        // Phone number validation $_POST['phone'] == '') {
+        if (!isset($_POST['phone']) || $_POST['phone'] === '') {
+            $validation['phone'] = 'Phone number field is required.';
         } else {
-            $phone = $_POST['phone'];
+            $valid = preg_match('/^\(?\d{3}\)?[- ]?\d{3}[- ]?\d{4}$/', $_POST['phone']);
+            if (!$valid) {
+                $validation['phone'] = 'Phone number is not valid.';
+            } else {
+                $phone = $_POST['phone'];
+            }
         }
 
 

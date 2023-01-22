@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 17, 2023 at 03:32 AM
+-- Generation Time: Jan 22, 2023 at 04:49 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 7.4.33
 
@@ -22,6 +22,19 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `boat` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `boat`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `boats`
+--
+
+CREATE TABLE `boats` (
+  `id` int(11) NOT NULL,
+  `boat_name` varchar(255) NOT NULL,
+  `boat_image` varchar(255) NOT NULL,
+  `boat_desc` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -58,21 +71,24 @@ CREATE TABLE `trips` (
   `trip_title` varchar(200) NOT NULL,
   `trip_price` decimal(11,2) NOT NULL,
   `trip_status` varchar(20) NOT NULL DEFAULT 'Unactive',
-  `trip_participants` int(11) NOT NULL
+  `trip_participants` int(11) NOT NULL,
+  `trip_desc` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `trips`
 --
 
-INSERT INTO `trips` (`id`, `trip_image`, `trip_title`, `trip_price`, `trip_status`, `trip_participants`) VALUES
-(1, 'zanzibarIsland.png', 'Zanzibar Island, Tanzaniaa', '149.99', 'Active', 0),
-(3, 'theGreekIsles.png', 'The Greek Isles', '399.99', 'Active', 0),
-(4, 'theAdriaticCoast.png', 'The Adriatic Coast, Croatia', '449.99', 'Active', 0),
-(5, 'theBayofIslands.png', 'The Bay of Islands, New Zealand', '649.99', 'Active', 0),
-(6, 'frenchPolynesia.png', 'French Polynesia, Tahiti', '449.99', 'Active', 1),
-(7, 'theBritishVirginIslands.png', 'The British Virgin Islands', '549.99', 'Active', 0),
-(8, 'lycianCoast.png', 'Lycian Coast, Turkey', '549.99', 'Active', 0);
+INSERT INTO `trips` (`id`, `trip_image`, `trip_title`, `trip_price`, `trip_status`, `trip_participants`, `trip_desc`) VALUES
+(1, 'zanzibarIsland.png', 'Zanzibar Island, Tanzaniaa', '149.99', 'Active', 4, ''),
+(3, 'theGreekIsles.png', 'The Greek Isles', '399.99', 'Active', 1, ''),
+(4, 'theAdriaticCoast.png', 'The Adriatic Coast, Croatia', '449.99', 'Active', 0, ''),
+(5, 'theBayofIslands.png', 'The Bay of Islands, New Zealand', '649.99', 'Active', 0, ''),
+(6, 'frenchPolynesia.png', 'French Polynesia, Tahiti', '449.99', 'Active', 1, ''),
+(7, 'theBritishVirginIslands.png', 'The British Virgin Islands', '549.99', 'Active', 2, ''),
+(8, 'lycianCoast.png', 'Lycian Coast, Turkey', '549.99', 'Active', 0, ''),
+(12, 'Private-sandy-beach.jpg', 'Saidia Beach, Morocco', '99999.99', 'Active', 0, ''),
+(13, 'Plage_Tibouda-Morocco-top-beaches-1024x680.webp', 'Tibouda, Morocco', '8999.99', 'Active', 0, '');
 
 -- --------------------------------------------------------
 
@@ -100,12 +116,18 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password_hash`, `firstname`, `lastname`, `birthday`, `sex`, `role`, `phonenumber`, `license_accepted`, `verified`) VALUES
-(10, 'ni', 'ni@gmail.com', '$2y$10$/zqTB9GM4IRckeQMwQ.77e0wgcX2kdDiHpGOM67U/fOGYsHdC.Vze', 'Natcha', 'Ni', '1995-01-31', 'Female', 'admin', '+36306524294', 1, 1),
-(11, 'gabor', 'gabor@gmail.com', '$2y$10$bQMrrYlf.ZnOxd6RvWGDH.7QKKD1Ie57gnISHBEcHa2ygMPwzX2rm', 'Gabor', 'Farkas', '1986-02-15', 'Male', 'admin', '+36306524294', 1, 1);
+(11, 'gabor', 'gabor@gmail.com', '$2y$10$bQMrrYlf.ZnOxd6RvWGDH.7QKKD1Ie57gnISHBEcHa2ygMPwzX2rm', 'Gabor', 'Farkas', '1986-02-15', 'Male', 'admin', '+36306524294', 1, 1),
+(13, 'goat', '190ibrahimahmed@gmail.com', '$2y$10$6RFsXc9yJ3w5Q.wPB8SbxOVFKWSlxAJdPEqVf.H0OdDAfW9.x/NKa', 'Ibrahim ', 'Ibrahim', '2003-01-10', 'Male', 'user', '+36306524294', 1, 1);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `boats`
+--
+ALTER TABLE `boats`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `book_trip`
@@ -132,22 +154,28 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `boats`
+--
+ALTER TABLE `boats`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `book_trip`
 --
 ALTER TABLE `book_trip`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `trips`
 --
 ALTER TABLE `trips`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Constraints for dumped tables

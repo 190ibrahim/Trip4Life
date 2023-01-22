@@ -98,17 +98,7 @@ section#contactus h1{
     margin-left: 15%;
 }
 
-/* .booktrip{
-    margin: 10%;
-}
 
-.booktrip-card{
-    margin: 2%;
-}
-.our-boats {
-    text-align: center;
-    margin: 5%;
-} */
 .row1 {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -428,4 +418,33 @@ footer a:hover {
 .card-body .btn:hover {
     background-color: #ccc;
     color: #fff;
+}
+
+
+
+
+.mySwiper {
+    overflow: hidden;
+}
+.book-trip-container {
+    position: relative;
+}
+
+.book-trip-container .swiper-button-next,
+.book-trip-container .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.book-trip-container .swiper-button-next {
+    right: 10px;
+}
+
+.book-trip-container .swiper-button-prev {
+    left: 10px;
+}
+
+.book-trip-container .swiper-pagination {
+    bottom: 10px;
 }

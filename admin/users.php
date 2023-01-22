@@ -1,14 +1,6 @@
 <div id="user_table" class="container">
     <div class="row">
         <div class="col-md-12 mt-4">
-            <!-- <!-- <?php //if(isset($_SESSION['message'])) : 
-                        ?> -->
-            <!-- <h5 class="alert alert-success"><?php //$_SESSION['message']; 
-                                                    ?></h5> -->
-            <?php
-            // unset($_SESSION['message']);
-            //endif; 
-            ?>
             <div class="card">
                 <div class="card-header">
                     <h3>Users

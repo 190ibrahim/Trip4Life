@@ -1,6 +1,6 @@
 <?php require "includes/head.php"; ?>
 
-
+<!---------  HEADER  ----------->
 <header id="header" class="header-section">
     <h1 class="header-title">Your sailing adventure starts here!</h1>
     <div class="experience">
@@ -45,197 +45,15 @@
 </header>
 
 <!---------  OUR TRIPS  ----------->
-<section id="trips" style="background-color:#F9F5EB;">
-    <div class="trip">
 
-
-        <div class="row row1">
-            <div class="col">
-                <h5>The Galapagos Islands, Ecuador</h5>
-                <img class="rounded float-start trip-img" src="pictures\galapagos.png" alt="galapagos">
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
-
-            </div>
-        </div>
-        <div class="row row1">
-            <div class="col">
-                <h5>The Whitsunday Islands, Australia</h5>
-                <img class="rounded float-start trip-img" src="pictures\theWhitsundayIslands.png"
-                    alt="theWhitsundayIslands">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
-
-            </div>
-        </div>
-        <div class="row row1">
-            <div class="col"">
-                    <h5>Zanzibar Island, Tanzania</h5>
-                    <img class=" rounded float-start trip-img" src="pictures\zanzibarIsland.png" alt="zanzibarIsland">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
-            </div>
-        </div>
-
-        <div class="row row1">
-            <div class="col">
-                <h5>The Greek Isles</h5>
-                <img class="rounded float-start trip-img" src="pictures\theGreekIsles.png" alt="theGreekIsles">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
-            </div>
-        </div>
-
-        <div class="row row1">
-            <div class="col">
-                <h5>The Adriatic Coast, Croatia</h5>
-                <img class="rounded float-start trip-img" src="pictures\theAdriaticCoast.png" alt="theAdriaticCoast">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
-            </div>
-        </div>
-
-        <div class="row row1">
-            <div class="col">
-                <h5>The Bay of Islands, New Zealand</h5>
-                <img class="rounded float-start trip-img" src="pictures\theBayofIslands.png" alt="theBayofIslands">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
-            </div>
-        </div>
-
-        <div class="row row1">
-            <div class="col">
-                <h5>French Polynesia, Tahiti</h5>
-                <img class="rounded float-start trip-img" src="pictures\frenchPolynesia.png" alt="frenchPolynesia">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
-            </div>
-        </div>
-
-        <div class="row row1">
-            <div class="col">
-                <h5>The British Virgin Islands</h5>
-                <img class="rounded float-start trip-img" src="pictures\theBritishVirginIslands.png"
-                    alt="theBritishVirginIslands">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
-            </div>
-        </div>
-        <div class="row row1">
-            <div class="col">
-                <h5>Lycian Coast, Turkey</h5>
-                <img class="rounded float-start trip-img" src="pictures\lycianCoast.png" alt="lycianCoast">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
-            </div>
-        </div>
-    </div>
-</section>
-
+<?php include "trips.php"; ?>
 
 <!---------  OUR boats  ----------->
 
-<section id="boats" style="background-color: #607EAA;">
-    <div class="our-boats">
-        <h2> Our boats</h2>
-    </div>
-    <div class="trip">
-        <div class="row row1">
-            <div class="col">
-                <h2>Bavaria C45</h2>
-                <img class="rounded float-start trip-img" src="pictures\bavariac45.png" alt="bavariac45">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
-
-            </div>
-        </div>
-        <div class="row row1">
-            <div class="col">
-                <h2>Beneteau 46.1</h2>
-                <img class="rounded float-start trip-img" src="pictures\beneteau46.png" alt="beneteau46.1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
-
-            </div>
-        </div>
-        <div class="row row1">
-            <div class="col"">
-                    <h2>Dufour 530 Grand Large</h2>
-                    <img class=" rounded float-start trip-img" src="pictures\dufour530GrandLarge.png"
-                alt="dufour530GrandLarge">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
-            </div>
-        </div>
-
-        <div class="row row1">
-            <div class="col">
-                <h2>Fountaine Pajot Isla 40</h2>
-                <img class="rounded float-start trip-img" src="pictures\fountainePajotIsla40.png"
-                    alt="fountainePajotIsla40">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
-            </div>
-        </div>
-    </div>
-</section>
+<?php include "boats.php"; ?>
 
 <!--------------- Book trips ---------------->
-
+<?php include "show_trips.php"; ?>
 
 <section id="booktrip" style="background-color: #F9F5EB;">
     <div class="booktrip">
