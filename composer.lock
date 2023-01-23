@@ -1,0 +1,166 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e93af724f99e3d36de4c088509ef01e1",
+    "packages": [
+        {
+            "name": "fortawesome/font-awesome",
+            "version": "6.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FortAwesome/Font-Awesome.git",
+                "reference": "96cafbd73ec4339b8c73c36673ce1518db82cc5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/96cafbd73ec4339b8c73c36673ce1518db82cc5c",
+                "reference": "96cafbd73ec4339b8c73c36673ce1518db82cc5c",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "CC-BY-4.0",
+                "OFL-1.1",
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "The Font Awesome Team",
+                    "homepage": "https://github.com/orgs/FortAwesome/people"
+                }
+            ],
+            "description": "The iconic font, CSS, and SVG framework",
+            "homepage": "https://fontawesome.com",
+            "keywords": [
+                "FontAwesome",
+                "awesome",
+                "bootstrap",
+                "font",
+                "icon",
+                "svg"
+            ],
+            "support": {
+                "docs": "http://fontawesome.com/docs",
+                "email": "hello@fontawesome.com",
+                "issues": "https://github.com/FortAwesome/Font-Awesome/issues",
+                "source": "https://github.com/FortAwesome/Font-Awesome"
+            },
+            "time": "2022-11-15T18:34:54+00:00"
+        },
+        {
+            "name": "nolimits4web/swiper",
+            "version": "v4.5.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nolimits4web/swiper.git",
+                "reference": "2b05891cdc2aa427f5697fa747680d1280dc4379"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nolimits4web/swiper/zipball/2b05891cdc2aa427f5697fa747680d1280dc4379",
+                "reference": "2b05891cdc2aa427f5697fa747680d1280dc4379",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimir Kharalmpidi",
+                    "email": "nolimits4web@gmail.com",
+                    "homepage": "https://idangero.us",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Most modern mobile touch slider and framework with hardware accelerated transitions",
+            "homepage": "http://www.idangero.us/swiper/",
+            "keywords": [
+                "app",
+                "carousel",
+                "cordova",
+                "framework",
+                "framework7",
+                "gallery",
+                "ios",
+                "mobile",
+                "phonegap",
+                "plugin",
+                "slider",
+                "swipe",
+                "swiper",
+                "touch"
+            ],
+            "support": {
+                "docs": "http://idangero.us/swiper/api/",
+                "issues": "https://github.com/nolimits4web/swiper/issues",
+                "source": "https://github.com/nolimits4web/swiper.git"
+            },
+            "time": "2019-10-16T11:51:47+00:00"
+        },
+        {
+            "name": "twbs/bootstrap",
+            "version": "v5.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "cb021439c683d9805e2864c58095b92d405e9b11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/cb021439c683d9805e2864c58095b92d405e9b11",
+                "reference": "cb021439c683d9805e2864c58095b92d405e9b11",
+                "shasum": ""
+            },
+            "replace": {
+                "twitter/bootstrap": "self.version"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                },
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                }
+            ],
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "homepage": "https://getbootstrap.com/",
+            "keywords": [
+                "JS",
+                "css",
+                "framework",
+                "front-end",
+                "mobile-first",
+                "responsive",
+                "sass",
+                "web"
+            ],
+            "support": {
+                "issues": "https://github.com/twbs/bootstrap/issues",
+                "source": "https://github.com/twbs/bootstrap/tree/v5.2.3"
+            },
+            "time": "2022-11-21T18:19:01+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

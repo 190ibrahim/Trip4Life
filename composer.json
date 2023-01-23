@@ -1,0 +1,20 @@
+{
+    "name": "190ibrahim/trip4life",
+    "description": "A website for booking sailing trips",
+    "autoload": {
+        "psr-4": {
+            "190ibrahim\\Trip4life\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "190ib",
+            "email": "190ibrahimahmed@gmail.com"
+        }
+    ],
+    "require": {
+        "nolimits4web/swiper": "^4.5",
+        "twbs/bootstrap": "^5.2",
+        "fortawesome/font-awesome": "^6.2"
+    }
+}
