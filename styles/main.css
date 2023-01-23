@@ -469,3 +469,56 @@ footer a:hover {
 .book-trip-container .swiper-pagination {
     bottom: 10px;
 }
+
+
+
+
+
+
+
+
+
+/* sign in page */
+/* center the form horizontally and vertically */
+.form-signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* style the form inputs */
+.form-floating {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.form-floating input {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+}
+
+.form-floating label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    padding-left: 0.5em;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-floating input:focus+label,
+.form-floating input:valid+label {
+    transform: translateY(-1.5em);
+    font-size: 0.8em;
+}
+
+/* style the submit button */
+.form-signin button {
+    margin-top: 2em;
+}
+
+/* style the validation error messages */
+.form-floating span {
+    color: red;
+}

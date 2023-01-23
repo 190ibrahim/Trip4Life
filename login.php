@@ -76,8 +76,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 
-<!DOCTYPE html>
-<html>
 
 <?php
 if (isset($_GET['trip_id'])) {
@@ -88,51 +86,44 @@ if (isset($_GET['trip_id'])) {
 }
 ?>
 
-<body class="form-signin w-50 m-auto">
+<body class="form-signin">
+    <div class="container">
+        <form method="POST" action="login.php" class="w-50 m-auto">
+
+            <h1 class="h3 mt-5 fw-normal text-center">Please sign in</h1>
+            <div class="form-floating my-3">
+                <input name="username" type="text" class="form-control" value="<?= isset($username) ? $username : '' ?>"
+                    id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address or username</label>
+                <?php
+                if (isset($validation) && isset($validation['username'])) {
+                ?>
+                <span><?= $validation['username'] ?></span>
+                <?php
+                }
+                ?>
+
+            </div>
+            <div class="form-floating my-3">
+                <input name="password" type="password" class="form-control"
+                    value="<?= isset($password) ? $password : '' ?>" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+                <?php
+                if (isset($validation) && isset($validation['password'])) {
+                ?>
+                <span><?= $validation['password'] ?></span>
+                <?php
+                }
+                ?>
+            </div>
 
 
-    <form method="POST" action="login.php">
-
-        <h1 class="h3 mt-5 fw-normal text-center">Please sign in</h1>
-        <div class="form-floating">
-            <input name="username" type="text" class="form-control" value="<?= isset($username) ? $username : '' ?>"
-                id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address or username</label>
-            <?php
-            if (isset($validation) && isset($validation['username'])) {
-            ?>
-            <span><?= $validation['username'] ?></span>
-            <?php
-            }
-            ?>
-
-        </div>
-        <div class="form-floating">
-            <input name="password" type="password" class="form-control" value="<?= isset($password) ? $password : '' ?>"
-                id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-            <?php
-            if (isset($validation) && isset($validation['password'])) {
-            ?>
-            <span><?= $validation['password'] ?></span>
-            <?php
-            }
-            ?>
-        </div>
-
-
-        <button class="w-100 btn btn-lg btn-primary" type="submit" name="SignIn">Sign in</button>
-        <h6 class="mt-3">Don't have an account <a href="signup.php">Create your account</a></h6>
-    </form>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
+            <button class="w-100 btn btn-lg btn-primary my-3" type="submit" name="SignIn">Sign in</button>
+            <h6 class="mt-3">Don't have an account <a href="signup.php">Create your account</a></h6>
+        </form>
+    </div>
     <?php include_once 'includes/footer.php' ?>
 </body>
+
 
 </html>

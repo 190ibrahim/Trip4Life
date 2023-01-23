@@ -168,7 +168,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!--   Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
 
     <!--   Awesome fonts -->
     <script src="https://kit.fontawesome.com/de7c5bb96e.js" crossorigin="anonymous"></script>
@@ -180,8 +181,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="container py-5 h-100">
             <div class="row justify-content-center align-items-center h-100">
                 <div class="col-12 col-lg-9 col-xl-7">
-                    <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
-                        <div class="card-body p-4 p-md-5">
+                    <div class="shadow-2-strong card-registration" style="border-radius: 15px;">
+                        <div class="p-4 p-md-5">
                             <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Register</h3>
 
 
@@ -192,11 +193,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                         <div class="form-outline">
                                             <label class="form-label" for="firstName">First Name</label>
-                                            <input name="firstname" type="text" id="firstName" class="form-control form-control-lg" value="<?= isset($firstname) ? $firstname : '' ?>" />
+                                            <input name="firstname" type="text" id="firstName"
+                                                class="form-control form-control-lg"
+                                                value="<?= isset($firstname) ? $firstname : '' ?>" />
                                             <?php
                                             if (isset($validation) && isset($validation['firstname'])) {
                                             ?>
-                                                <span><?= $validation['firstname'] ?></span>
+                                            <span class="text-danger"><?= $validation['firstname'] ?></span>
                                             <?php
                                             }
                                             ?>
@@ -208,11 +211,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                         <div class="form-outline">
                                             <label class="form-label" for="lastName">Last Name</label>
-                                            <input name="lastname" type="text" id="lastName" class="form-control form-control-lg" value="<?= isset($lastname) ? $lastname : '' ?>" />
+                                            <input name="lastname" type="text" id="lastName"
+                                                class="form-control form-control-lg"
+                                                value="<?= isset($lastname) ? $lastname : '' ?>" />
                                             <?php
                                             if (isset($validation) && isset($validation['lastname'])) {
                                             ?>
-                                                <span><?= $validation['lastname'] ?></span>
+                                            <span class="text-danger"><?= $validation['lastname'] ?></span>
                                             <?php
                                             }
                                             ?>
@@ -227,43 +232,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                         <div class="form-outline datepicker w-100">
                                             <label for="birthday" class="form-label">Birthday</label>
-                                            <input name="birthday" type="date" class="form-control form-control-lg" id="birthday" value="<?= isset($birthday) ? $birthday : '' ?>" />
+                                            <input name="birthday" type="date" class="form-control form-control-lg"
+                                                id="birthday" value="<?= isset($birthday) ? $birthday : '' ?>" />
                                             <?php
                                             if (isset($validation) && isset($validation['birthday'])) {
                                             ?>
-                                                <span><?= $validation['birthday'] ?></span>
+                                            <span class="text-danger"><?= $validation['birthday'] ?></span>
                                             <?php
                                             }
                                             ?>
                                         </div>
 
                                     </div>
-                                    <div class="col-md-6 mb-4">
+                                    <div class="col-md-6 mb-4 pb-2">
+                                        <div class="form-outline">
+                                            <label class="form-label" for="username">Username</label>
+                                            <input name="username" type="text" id="username"
+                                                class="form-control form-control-lg"
+                                                value="<?= isset($username) ? $username : '' ?>" />
+                                            <?php
+                                            if (isset($validation) && isset($validation['username'])) {
+                                            ?>
+                                            <span class="text-danger"><?= $validation['username'] ?></span>
+                                            <?php
+                                            }
+                                            ?>
 
-                                        <h6 class="mb-2 pb-1">Gender: </h6>
-
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="sex" id="femaleGender" value="Female" />
-                                            <label class="form-check-label" for="femaleGender">Female</label>
                                         </div>
-
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="sex" id="maleGender" value="Male" />
-                                            <label class="form-check-label" for="maleGender">Male</label>
-                                        </div>
-
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="sex" id="otherGender" value="Other" />
-                                            <label class="form-check-label" for="otherGender">Other</label>
-                                        </div>
-                                        <?php
-                                        if (isset($validation) && isset($validation['sex'])) {
-                                        ?>
-                                            <span><?= $validation['sex'] ?></span>
-                                        <?php
-                                        }
-                                        ?>
-
                                     </div>
                                 </div>
 
@@ -272,11 +267,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                         <div class="form-outline">
                                             <label class="form-label" for="emailaddress">Email</label>
-                                            <input name="email" type="email" id="emailaddress" class="form-control form-control-lg" value="<?= isset($email) ? $email : '' ?>" />
+                                            <input name="email" type="email" id="emailaddress"
+                                                class="form-control form-control-lg"
+                                                value="<?= isset($email) ? $email : '' ?>" />
                                             <?php
                                             if (isset($validation) && isset($validation['email'])) {
                                             ?>
-                                                <span><?= $validation['email'] ?></span>
+                                            <span class="text-danger"><?= $validation['email'] ?></span>
                                             <?php
                                             }
                                             ?>
@@ -288,11 +285,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                         <div class="form-outline">
                                             <label class="form-label" for="phonenumber">Phone Number</label>
-                                            <input name="phonenumber" type="text" id="phonenumber" class="form-control form-control-lg" value="<?= isset($phonenumber) ? $phonenumber : '' ?>" />
+                                            <input name="phonenumber" type="text" id="phonenumber"
+                                                class="form-control form-control-lg"
+                                                value="<?= isset($phonenumber) ? $phonenumber : '' ?>" />
                                             <?php
                                             if (isset($validation) && isset($validation['phonenumber'])) {
                                             ?>
-                                                <span><?= $validation['phonenumber'] ?></span>
+                                            <span class="text-danger"><?= $validation['phonenumber'] ?></span>
                                             <?php
                                             }
                                             ?>
@@ -304,20 +303,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
                                 <div class="row">
-                                    <div class="col-md-6 mb-4 pb-2">
-                                        <div class="form-outline">
-                                            <h6 class="mb-2 pb-1">Please chose a user name </h6>
-                                            <label class="form-label" for="username">Username</label>
-                                            <input name="username" type="text" id="username" class="form-control form-control-lg" value="<?= isset($username) ? $username : '' ?>" />
-                                            <?php
-                                            if (isset($validation) && isset($validation['username'])) {
-                                            ?>
-                                                <span><?= $validation['username'] ?></span>
-                                            <?php
-                                            }
-                                            ?>
+                                    <div class="col-md-6 mb-4">
 
+                                        <h6 class="mb-2 pb-1">Gender: </h6>
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="sex" id="femaleGender"
+                                                value="Female" />
+                                            <label class="form-check-label" for="femaleGender">Female</label>
                                         </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="sex" id="maleGender"
+                                                value="Male" />
+                                            <label class="form-check-label" for="maleGender">Male</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="sex" id="otherGender"
+                                                value="Other" />
+                                            <label class="form-check-label" for="otherGender">Other</label>
+                                        </div>
+                                        <?php
+                                        if (isset($validation) && isset($validation['sex'])) {
+                                        ?>
+                                        <span class="text-danger"><?= $validation['sex'] ?></span>
+                                        <?php
+                                        }
+                                        ?>
+
                                     </div>
 
                                     <div class="col-md-6 mb-4 pb-2">
@@ -329,7 +343,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             <?php
                                             if (isset($validation) && isset($validation['license'])) {
                                             ?>
-                                                <span><?= $validation['license'] ?></span>
+                                            <span class="text-danger"><?= $validation['license'] ?></span>
                                             <?php
                                             }
                                             ?>
@@ -337,28 +351,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-md-6 mb-4 pb-2">
+                                        <div class="col-md-6 mb-4">
 
                                             <div class="form-outline">
                                                 <label class="form-label" for="password">Password</label>
-                                                <input name="password" type="password" id="password" class="form-control form-control-lg" placeholder="Atleast 10 characters" />
+                                                <input name="password" type="password" id="password"
+                                                    class="form-control form-control-lg"
+                                                    placeholder="Atleast 10 characters" />
                                                 <?php
                                                 if (isset($validation) && isset($validation['password'])) { ?>
-                                                    <span><?= $validation['password'] ?></span>
+                                                <span class="text-danger"><?= $validation['password'] ?></span>
                                                 <?php } ?>
 
                                             </div>
 
                                         </div>
-                                        <div class="col-md-6 mb-4 pb-2">
+                                        <div class="col-md-6 mb-4">
 
                                             <div class="form-outline">
                                                 <label class="form-label" for="password_confirm">Confirm
                                                     password</label>
-                                                <input name="password_confirm" type="password" id="password_confirm" class="form-control form-control-lg" />
+                                                <input name="password_confirm" type="password" id="password_confirm"
+                                                    class="form-control form-control-lg" />
                                                 <?php
                                                 if (isset($validation) && isset($validation['password_confirm'])) { ?>
-                                                    <span><?= $validation['password_confirm'] ?></span>
+                                                <span class="text-danger"><?= $validation['password_confirm'] ?></span>
                                                 <?php } ?>
 
                                             </div>
@@ -366,9 +383,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         </div>
                                     </div>
 
-                                    <div class="mt-4 pt-2">
-                                        <input name="submit" class="btn btn-primary btn-lg" type="submit" value="Submit" />
-                                    </div>
+                                    <button class="w-40 btn btn-lg btn-primary my-3" type="submit"
+                                        name="submit">Register</button>
+                                    <h6 class="mt-3">You already have an account? <a href="login.php">Sign in</a></h6>
 
                             </form>
                         </div>
