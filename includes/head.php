@@ -25,7 +25,7 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
     <script src="https://kit.fontawesome.com/de7c5bb96e.js" crossorigin="anonymous"></script>
 
 </head>
