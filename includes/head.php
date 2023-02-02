@@ -88,9 +88,11 @@ session_start();
                         </a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
-                                <a class="nav-link profile-link" href="profile.php">
+                                <a class="nav-link profile-link"
+                                    href="profile.php?profile_id=<?php echo $_SESSION['user_id']; ?>">
                                     <i class="fas fa-user"></i> Profile
                                 </a>
+
                             </li>
 
                             <li class="nav-item">
