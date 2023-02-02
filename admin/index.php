@@ -1,5 +1,6 @@
 <?php
 include "admin_header.php";
+include "functions.php";
 ?>
 
 
@@ -16,7 +17,12 @@ include "admin_header.php";
                         <h4 class="m-0">Users</h4>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">23</h5>
+                        <h5 class="card-title">
+                            <?php
+                            $users_count = count_rows('users');
+                            echo $users_count;
+                            ?>
+                        </h5>
                         <div class="d-flex justify-content-between">
                             <a href="customers.php" class="btn btn-light card-link d-inline-block mr-2">View Details</a>
                             <a href="add_user.php" class="btn btn-light card-link d-inline-block">Add User</a>
@@ -31,7 +37,12 @@ include "admin_header.php";
                         <h4 class="m-0 text-custom d-inline-block">Trips</h4>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title text-custom">12</h5>
+                        <h5 class="card-title text-custom">
+                            <?php
+                            $trips_count = count_rows('trips');
+                            echo $trips_count;
+                            ?>
+                        </h5>
                         <div class="d-flex justify-content-between">
                             <a href="trips.php" class="btn btn-light card-link d-inline-block mr-2">View Details</a>
                             <a href="add_trip.php" class="btn btn-light card-link d-inline-block">Add Trip</a>
@@ -46,7 +57,12 @@ include "admin_header.php";
                         <h4 class="m-0">Bookings</h4>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title text-custom">23</h5>
+                        <h5 class="card-title text-custom">
+                            <?php
+                            $bookings_count = count_rows('book_trip');
+                            echo $bookings_count;
+                            ?>
+                        </h5>
                         <div class="d-flex justify-content-between">
                             <a href="bookings.php" class="btn btn-light card-link d-inline-block mr-2">View Details</a>
                             <a href="add_booking.php" class="btn btn-light card-link d-inline-block">Add Booking</a>
@@ -57,6 +73,28 @@ include "admin_header.php";
         </div>
     </div>
 
+
+
+
+    <?php
+
+    $query = "SELECT * FROM trips WHERE trip_status= 'Active'";
+    $active_trips =  getRowCount($query);
+
+    $query = "SELECT * FROM trips WHERE trip_status= 'Unactive'";
+    $unactive_trips =  getRowCount($query);
+
+    $query = "SELECT * FROM users WHERE user_role= 'subscriber'";
+    $subscriber_users_count =  getRowCount($query);
+
+    $query = "SELECT * FROM comments WHERE comment_status= 'Approved'";
+    $approved_comments_count =  getRowCount($query);
+
+    $query = "SELECT * FROM comments WHERE comment_status= 'Unapproved'";
+    $unapproved_comments_count =  getRowCount($query);
+
+
+    ?>
 
     <!-- Google chart -->
     <div id="dashboard" class="container">
@@ -78,9 +116,9 @@ include "admin_header.php";
                             function drawChart() {
                                 var data = google.visualization.arrayToDataTable([
                                     ['Data', 'All', 'Active', 'Unactive'],
-                                    ['Users', 100, 40, 60],
-                                    ['Trips', 100, 40, 60],
-                                    ['Bookings', 100, 10, 90],
+                                    ['Users', 10, 4, 6],
+                                    <?php echo "['Trips'" . "," . "{$trips_count}" . "," . "{$active_trips}" . "," . "{$unactive_trips}], ";
+                                        ?>['Bookings', 10, 1, 9],
                                 ]);
 
                                 var options = {
