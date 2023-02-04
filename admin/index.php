@@ -78,20 +78,20 @@ include "functions.php";
 
     <?php
 
-    $query = "SELECT * FROM trips WHERE trip_status= 'Active'";
-    $active_trips =  getRowCount($query);
+    // $query = "SELECT * FROM trips WHERE trip_status= 'Active'";
+    // $active_trips =  getRowCount($query);
 
-    $query = "SELECT * FROM trips WHERE trip_status= 'Unactive'";
-    $unactive_trips =  getRowCount($query);
+    // $query = "SELECT * FROM trips WHERE trip_status= 'Unactive'";
+    // $unactive_trips =  getRowCount($query);
 
-    $query = "SELECT * FROM users WHERE user_role= 'subscriber'";
-    $subscriber_users_count =  getRowCount($query);
+    // $query = "SELECT * FROM users WHERE user_role= 'subscriber'";
+    // $subscriber_users_count =  getRowCount($query);
 
-    $query = "SELECT * FROM comments WHERE comment_status= 'Approved'";
-    $approved_comments_count =  getRowCount($query);
+    // $query = "SELECT * FROM comments WHERE comment_status= 'Approved'";
+    // $approved_comments_count =  getRowCount($query);
 
-    $query = "SELECT * FROM comments WHERE comment_status= 'Unapproved'";
-    $unapproved_comments_count =  getRowCount($query);
+    // $query = "SELECT * FROM comments WHERE comment_status= 'Unapproved'";
+    // $unapproved_comments_count =  getRowCount($query);
 
 
     ?>
