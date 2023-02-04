@@ -117,8 +117,9 @@ include "functions.php";
                                 var data = google.visualization.arrayToDataTable([
                                     ['Data', 'All', 'Active', 'Unactive'],
                                     ['Users', 10, 4, 6],
-                                    <?php echo "['Trips'" . "," . "{$trips_count}" . "," . "{$active_trips}" . "," . "{$unactive_trips}], ";
-                                        ?>['Bookings', 10, 1, 9],
+                                    //echo "['Trips'" . "," . "{$trips_count}" . "," . "{$active_trips}" . "," . "{$unactive_trips}], ";
+                                    ['trips', 10, 4, 6],
+                                    ['Bookings', 10, 1, 9],
                                 ]);
 
                                 var options = {
